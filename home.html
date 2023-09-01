@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.container{
+    margin:100px;
+    padding:20px;
+  background-color: #B7C4CF;
+}
+body{
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>We Offers 3 Course</h2>
+
+<button class="accordion">1. Computer Science</button>
+<div class="panel">
+  <p>Computer Science is the study of computers and computational systems. 
+    It explores hardware and software, data structures, the theory of computation, algorithms, networks, and everything in between. 
+    Computer Science overlaps with other academic disciplines, like Mathematics, Statistics, Engineering, and Electronics.<br><br>
+
+    Some of the main areas of study within Computer Science are Machine Learning, Artificial Intelligence, Computer Engineering, 
+    Cloud and Network Infrastructure, Cyber Security, Software Engineering, Human-Computer Interaction (HCI), and others.</p><br>
+  <ol>
+    <li>Data Science & Big Data</li><br>
+    <li>Web Technologies & Cloud Computing</li><br>
+    <li>Cyber Security</li><br>
+    <li>Software Engineering</li><br>
+    <li>Artificial Intelligence</li><br>
+    <li>Machine Learning</li>
+    <li>Computer Sciences</li>
+  </ol>
+  </div>
+<button class="accordion">2. Data Science</button>
+<div class="panel">
+  <p>Data science is the domain of study that deals with vast volumes of data using modern tools and techniques to find unseen patterns, derive meaningful information, and make business decisions. Data science uses complex machine learning algorithms to build predictive models.<br><br>
+
+    The data used for analysis can come from many different sources and presented in various formats.<br>
+    
+    Now that you know what data science is, let’s see why data science is essential to today’s IT landscape.<br></p>
+  <ol>
+    <li>Data Science & Big Data</li><br>
+    <li>Meta Database Engineer</li><br>
+    <li>Machine Learning</li><br>
+    <li>Data Warehouse Engineer</li><br>
+    <li>Mathematics for Engineers</li><br>
+  </ol>
+
+</div>
+
+<button class="accordion">3. Information Technology</button>
+<div class="panel">
+  <p>Information Technology (IT) is the application of technology to solve organizational and business problems. 
+    This field of engineering uses computers, networks, storage, and other technical infrastructure both hardware and software, to deal with and manipulate information/data. 
+    Information Technology (IT) professionals are adept with the latest emerging technologies, arriving at the most optimal (consuming least time and effort) solutions to any technical issues that may arise, small-scale or large. <br><br>
+    The responsibilities of an Information Technology department are many; professionals follow a combination of policies and processes to ensure IT systems run effectively and are aligned with the organization’s needs, 
+    they provide tech support, maintenance, device management and security testing services. <br>
+</p>
+<ol>
+  <li>Informatics & Information Technology</li><br>
+  <li>Geographical Information Systems (GIS)</li><br>
+  <li>User Experience Design</li><br>
+  <li>Business Information Systems</li><br>
+  <li>Video Games & Animation</li><br>
+  <li>Health Informatics</li><br>
+  <li>Human Computer Interaction</li><br>
+  <li>IT Security</li>
+</ol>
+
+</div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
